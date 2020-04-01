@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	fmt.Println("Hello World ! 71")
+	mode := os.Args[1]
+	file := os.Args[2]
+	s, _ := os.Executable()
+	fmt.Println(mode, file, s)
 }
