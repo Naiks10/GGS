@@ -1,4 +1,4 @@
-package GGS
+package main
 
 import (
 	"fmt"
